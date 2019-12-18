@@ -1,0 +1,192 @@
+﻿
+@{
+    ViewBag.Title = "CountOrderPrice";
+}
+<style>
+    .shadow {
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        font-size: 92px;
+        padding: 80px 50px;
+        text-align: center;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        color: #e0dfdc;
+        background-color: #333;
+        letter-spacing: .1em;
+        text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    }
+
+    .button {
+        position: relative;
+        color: #e0dfdc;
+        text-decoration: none;
+        background-color: #333;
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 700;
+        font-size: 3em;
+        padding: 10px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 9px 0px #333, 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px #333, 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px #333, 0px 9px 25px rgba(0,0,0,.7);
+        margin-top: 30px;
+        margin-right: 20px;
+        display: inline-block;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+
+        .button:active {
+            -webkit-box-shadow: 0px 3px 0px #333, 0px 3px 6px rgba(0,0,0,.9);
+            -moz-box-shadow: 0px 3px 0px #333, 0px 3px 6px rgba(0,0,0,.9);
+            box-shadow: 0px 3px 0px #333, 0px 3px 6px rgba(0,0,0,.9);
+            position: relative;
+            top: 6px;
+        }
+
+    .select-css {
+        display: block;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 700;
+        color: #444;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: 1px solid #aaa;
+        box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+        border-radius: .5em;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+    }
+
+    .select-css::-ms-expand {
+        display: none;
+    }
+
+    .select-css:hover {
+        border-color: #888;
+    }
+
+    .select-css:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+
+    .select-css option {
+        font-weight: normal;
+    }
+</style>
+<h1>Count order price</h1>
+<hr>
+<form id="Oleg" method="post">
+    <h2>Device type:</h2>
+    <p></p>
+    <select class="select-css" name="type" selected="selected" onchange="this.form.submit()">
+        @foreach (var type in ViewBag.type)
+        {
+            if (type is char)
+            {
+                <option>@Session["typeName"].ToString()</option>
+                break;
+            }
+            <option selected="selected">@type</option>
+        }
+    </select>
+    <p></p>
+    <h2>Device company:</h2>
+    <p></p>
+    <select class="select-css" name="company" onchange="this.form.submit()">
+        @if (ViewBag.company != null)
+        {
+
+            foreach (var type in ViewBag.company)
+            {
+                if (type is char)
+                {
+                    <option>@Session["companyName"].ToString()</option>
+                    break;
+                }
+                <option selected="selected">@type</option>
+            }
+        }
+        else
+        {
+            <option>Company</option>
+        }
+
+    </select>
+    <p></p>
+    <h2>Device model:</h2>
+    <p></p>
+    <select class="select-css" name="model" onchange="this.form.submit()">
+        @if (ViewBag.model != null)
+        {
+
+            foreach (var type in ViewBag.model)
+            {
+
+                if (type is char)
+                {
+                    <option>@Session["modelName"].ToString()</option>
+                    break;
+                }
+                <option selected="selected">@type</option>
+
+            }
+        }
+        else
+        {
+            <option>Model</option>
+        }
+    </select>
+    <p></p>
+    <h2>Device defect:</h2>
+    <p></p>
+    <select class="select-css" name="defect" onchange="this.form.submit()">
+        @if (ViewBag.defect != null)
+        {
+            foreach (var type in ViewBag.defect)
+            {
+
+
+                if (type is char)
+                {
+                    <option>@Session["defectName"].ToString()</option>
+                    break;
+                }
+                <option selected="selected">@type</option>
+            }
+        }
+        else
+        {
+            <option>Defect</option>
+        }
+    </select>
+    <input class="button" value="Show price" title="Show price" style="border-style:Solid;" type="submit">
+    @using (Html.BeginForm("MainPage", "Orders"))
+    {
+        {
+            <input class="button" type="button" value="Create order" onclick="location.href = '@Url.Action("NewOrder", "Orders", new { type = ViewBag.type, company = ViewBag.Company, model = ViewBag.Model, defect = ViewBag.Defect, price = ViewBag.Price })'" />
+        }
+    }
+
+    <h1 class="shadow">To fix the device you need to pay @ViewBag.price$</h1>
+</form>

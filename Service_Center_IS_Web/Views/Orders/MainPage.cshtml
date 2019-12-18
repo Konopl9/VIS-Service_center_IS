@@ -1,0 +1,62 @@
+﻿@using Service_Center_IS.Database
+@model IEnumerable<Service_Center_IS.Database.Order>
+
+@{
+    ViewBag.Title = "MainPage";
+}
+
+<h2>MainPage</h2>
+<h2>@ViewBag.message</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Oid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShippedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Defect)
+        </th>
+        <th>
+            @Html.Name("PAYMENT")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Oid)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.OrderDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ShippedDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Defect)
+    </td>
+    <td>
+        @Html.ActionLink("Pay for order", "Pay", new { id = item.Oid, price = item.Price, status = item.Status, login = HttpContext.Current.User.Identity.Name })
+    </td>
+</tr>
+    }
+
+</table>

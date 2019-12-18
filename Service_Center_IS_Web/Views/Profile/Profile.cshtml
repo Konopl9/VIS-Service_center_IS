@@ -1,0 +1,46 @@
+﻿@model Service_Center_IS.Database.Customer
+
+@{
+    ViewBag.Title = "Profile";
+}
+    <div>
+        <div class="container">
+            <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-10">
+                <div style="position: fixed; left: 80px; top: 70px">
+                    <strong>
+                        <h1 style="margin-bottom: 30px;">Profile info:</h1>
+                    </strong>
+                    <p>
+                        <h3 style="display: inline" inline><strong>@Html.DisplayNameFor(model => model.Name):</strong> @Html.DisplayFor(model => model.Name) </h3>
+                    <p>
+                        <h3 style="display: inline" inline><strong>@Html.DisplayNameFor(model => model.Surname):</strong> @Html.DisplayFor(model => model.Surname) </h3>
+                    <p>
+                        <h3 style="display: inline" inline><strong>@Html.DisplayNameFor(model => model.DateOfBirthday):</strong> @Html.DisplayFor(model => model.DateOfBirthday) </h3>
+                    <p>
+                        <h3 style="display: inline" inline><strong>@Html.DisplayNameFor(model => model.Phone):</strong> @Html.DisplayFor(model => model.Phone) </h3>
+                    <p>
+                        <h3 style="display: inline" inline><strong>@Html.DisplayNameFor(model => model.Email):</strong> @Html.DisplayFor(model => model.Email) </h3>
+                </div>
+            </div>
+        </div>
+        <div style="  margin: auto;width: 50%;padding: 30px; ">
+            <form method="post" id="passwordForm">
+                <div class="form-group">
+                    <label>Current password:</label>
+                    <input type="password" class="input-lg form-control" name="currentPassword" placeholder="Current Password" autocomplete="off" form="passwordForm">
+                </div>
+                <div class="form-group">
+                    <label>New password:</label>
+                    <input type="password" class="input-lg form-control" name="newPassword" placeholder="New Password" autocomplete="off" form="passwordForm">
+                </div>
+                <div class="form-group">
+                    <label>Repeat password</label>
+                    <input type="password" class="input-lg form-control" name="RepeatPassword" id="password2" placeholder="Repeat Password" autocomplete="off" form="passwordForm">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg" data-loading-text="Changing Password..." value="Change Password" onclick="location.href = @Url.Action("Profile", "Profile", Model)">
+                    <label style="color: red">@ViewBag.message</label>
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\maksi\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\maksi\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\maksi\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\maksi\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Service_Center_IS.-1515739432.00" t="ExcludeRecursive" />
+    <e p="C:\Users\maksi\source\repos\Service_Center_IS" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive">
+        <e p="MongoDB.Libmongocrypt.1.0.0\x64\native\windows\mongocrypt.dll" t="Include" />
+      </e>
+      <e p="Service_Center_IS" t="IncludeRecursive">
+        <e p="AddAddressToCustomer.cs" t="Include" />
+        <e p="AddAddressToCustomer.Designer.cs" t="Include" />
+        <e p="AddAddressToCustomer.resx" t="Include" />
+        <e p="AddNewCustomer.cs" t="Include" />
+        <e p="AddNewCustomer.Designer.cs" t="Include" />
+        <e p="AddNewCustomer.resx" t="Include" />
+        <e p="AddNewEmployee.cs" t="Include" />
+        <e p="AddNewEmployee.Designer.cs" t="Include" />
+        <e p="AddNewEmployee.resx" t="Include" />
+        <e p="AddNewOrder.cs" t="Include" />
+        <e p="AddNewOrder.designer.cs" t="Include" />
+        <e p="AddNewOrder.resx" t="Include" />
+        <e p="AdministrationForm.cs" t="Include" />
+        <e p="AdministrationForm.Designer.cs" t="Include" />
+        <e p="AdministrationForm.resx" t="Include" />
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChangePassword.cs" t="Include" />
+        <e p="ChangePassword.Designer.cs" t="Include" />
+        <e p="ChangePassword.resx" t="Include" />
+        <e p="Database" t="Include">
+          <e p="Address.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="CustomerAccount.cs" t="Include" />
+          <e p="dao_sqls" t="Include">
+            <e p="AddressTable.cs" t="Include" />
+            <e p="CustomerAccountTable.cs" t="Include" />
+            <e p="CustomerTable.cs" t="Include" />
+            <e p="Database.cs" t="Include" />
+            <e p="DeviceTable.cs" t="Include" />
+            <e p="EmployeeAccountTable.cs" t="Include" />
+            <e p="EmployeeTable.cs" t="Include" />
+            <e p="OrderTable.cs" t="Include" />
+            <e p="WorkerTable.cs" t="Include" />
+          </e>
+          <e p="Device.cs" t="Include" />
+          <e p="Employee.cs" t="Include" />
+          <e p="EmployeeAccount.cs" t="Include" />
+          <e p="ICustomer.cs" t="Include" />
+          <e p="IEmployee.cs" t="Include" />
+          <e p="IUser.cs" t="Include" />
+          <e p="IWorker.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+          <e p="Worker.cs" t="Include" />
+        </e>
+        <e p="EditCustomer.cs" t="Include" />
+        <e p="EditCustomer.Designer.cs" t="Include" />
+        <e p="EditCustomer.resx" t="Include" />
+        <e p="EditEmployee.cs" t="Include" />
+        <e p="EditEmployee.Designer.cs" t="Include" />
+        <e p="EditEmployee.resx" t="Include" />
+        <e p="EditOrder.cs" t="Include" />
+        <e p="EditOrder.Designer.cs" t="Include" />
+        <e p="EditOrder.resx" t="Include" />
+        <e p="EmployeeOfTheMonth.cs" t="Include" />
+        <e p="EmployeeOfTheMonth.Designer.cs" t="Include" />
+        <e p="EmployeeOfTheMonth.resx" t="Include" />
+        <e p="InvoiceData.cs" t="Include" />
+        <e p="LoginForm.cs" t="Include" />
+        <e p="LoginForm.Designer.cs" t="Include" />
+        <e p="LoginForm.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Service_Center_IS.csproj" t="IncludeRecursive" />
+        <e p="WorkerForm.cs" t="Include" />
+        <e p="WorkerForm.Designer.cs" t="Include" />
+        <e p="WorkerForm.resx" t="Include" />
+      </e>
+      <e p="Service_Center_IS.sln" t="IncludeFlat" />
+      <e p="Service_Center_IS_Web" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="bootstrap-theme.css" t="Include" />
+          <e p="bootstrap-theme.css.map" t="Include" />
+          <e p="bootstrap-theme.min.css" t="Include" />
+          <e p="bootstrap-theme.min.css.map" t="Include" />
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.css.map" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="bootstrap.min.css.map" t="Include" />
+          <e p="fei.png" t="Include" />
+          <e p="Site.css" t="Include" />
+          <e p="vsb logo.png" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+          <e p="OrdersController.cs" t="Include" />
+          <e p="ProfileController.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="Address.cs" t="Include" />
+          <e p="Customer.cs" t="Include" />
+          <e p="CustomerAccount.cs" t="Include" />
+          <e p="dao_sqls" t="Include">
+            <e p="AddressTable.cs" t="Include" />
+            <e p="CustomerAccountTable.cs" t="Include" />
+            <e p="CustomerTable.cs" t="Include" />
+            <e p="Database.cs" t="Include" />
+            <e p="DeviceTable.cs" t="Include" />
+            <e p="EmployeeAccountTable.cs" t="Include" />
+            <e p="EmployeeTable.cs" t="Include" />
+            <e p="OrderTable.cs" t="Include" />
+            <e p="WorkerTable.cs" t="Include" />
+          </e>
+          <e p="Device.cs" t="Include" />
+          <e p="Employee.cs" t="Include" />
+          <e p="EmployeeAccount.cs" t="Include" />
+          <e p="ICustomer.cs" t="Include" />
+          <e p="IEmployee.cs" t="Include" />
+          <e p="IUser.cs" t="Include" />
+          <e p="IWorker.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+          <e p="Worker.cs" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="fonts" t="Include">
+          <e p="glyphicons-halflings-regular.eot" t="Include" />
+          <e p="glyphicons-halflings-regular.svg" t="Include" />
+          <e p="glyphicons-halflings-regular.ttf" t="Include" />
+          <e p="glyphicons-halflings-regular.woff" t="Include" />
+          <e p="glyphicons-halflings-regular.woff2" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="MongoCRUD.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="jquery-3.4.1.intellisense.js" t="Include" />
+          <e p="jquery-3.4.1.js" t="Include" />
+          <e p="jquery-3.4.1.min.js" t="Include" />
+          <e p="jquery-3.4.1.min.map" t="Include" />
+          <e p="jquery-3.4.1.slim.js" t="Include" />
+          <e p="jquery-3.4.1.slim.min.js" t="Include" />
+          <e p="jquery-3.4.1.slim.min.map" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="modernizr-2.8.3.js" t="Include" />
+        </e>
+        <e p="Service_Center_IS_Web.csproj" t="IncludeRecursive" />
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Home" t="Include">
+            <e p="Login.cshtml" t="Include" />
+            <e p="MainPage.cshtml" t="Include" />
+            <e p="MyDesign.css" t="Include" />
+            <e p="Registration.cshtml" t="Include" />
+          </e>
+          <e p="Orders" t="Include">
+            <e p="CountOrderPrice.cshtml" t="Include" />
+            <e p="MainPage.cshtml" t="Include" />
+            <e p="NewOrder.cshtml" t="Include" />
+            <e p="Pay.cshtml" t="Include" />
+          </e>
+          <e p="Profile" t="Include">
+            <e p="Profile.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

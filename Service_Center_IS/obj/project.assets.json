@@ -1,0 +1,187 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Service_Center_IS_Web/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Service_Center_IS_Web/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Service_Center_IS_Web/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Service_Center_IS_Web/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service_Center_IS_Web.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.IdentityModel.Logging/5.6.0": {
+      "sha512": "zEDrfEVW5x5w2hbTV94WwAcWvtue5hNTXYqoPh3ypF6U8csm09JazEYy+VPp2RtczkyMfcsvWY9Fea17e+isYQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Logging.dll",
+        "lib/net45/Microsoft.IdentityModel.Logging.xml",
+        "lib/net451/Microsoft.IdentityModel.Logging.dll",
+        "lib/net451/Microsoft.IdentityModel.Logging.xml",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.5.6.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Service_Center_IS_Web/1.0.0": {
+      "type": "project",
+      "path": "../Service_Center_IS_Web/Service_Center_IS_Web.csproj",
+      "msbuildProject": "../Service_Center_IS_Web/Service_Center_IS_Web.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Microsoft.IdentityModel.Logging >= 5.6.0",
+      "Service_Center_IS_Web >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\maksi\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\maksi\\source\\repos\\Service_Center_IS\\Service_Center_IS\\Service_Center_IS.csproj",
+      "projectName": "Service_Center_IS",
+      "projectPath": "C:\\Users\\maksi\\source\\repos\\Service_Center_IS\\Service_Center_IS\\Service_Center_IS.csproj",
+      "packagesPath": "C:\\Users\\maksi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maksi\\source\\repos\\Service_Center_IS\\Service_Center_IS\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\maksi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Users\\maksi\\source\\repos\\Service_Center_IS\\Service_Center_IS_Web\\Service_Center_IS_Web.csproj": {
+              "projectPath": "C:\\Users\\maksi\\source\\repos\\Service_Center_IS\\Service_Center_IS_Web\\Service_Center_IS_Web.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": {
+            "target": "Package",
+            "version": "[5.6.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
